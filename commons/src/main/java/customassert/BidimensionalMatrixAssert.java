@@ -1,4 +1,5 @@
-package common;
+package customassert;
+
 
 import static org.assertj.core.api.Assertions.assertThat;
 

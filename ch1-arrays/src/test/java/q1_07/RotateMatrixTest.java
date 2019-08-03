@@ -2,9 +2,9 @@ package q1_07;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import common.CommonUtils;
+import customassert.CustomAssert;
 
 public class RotateMatrixTest {
 
@@ -17,7 +17,7 @@ public class RotateMatrixTest {
                 {2,1},
                 {1,3}};
         RotateMatrix.rotate(matrix);
-        CommonUtils.assertBidimensionalArray(matrix).isEqualTo(expected);
+        CustomAssert.assertBidimensionalArray(matrix).isEqualTo(expected);
     }
 
     @Test
@@ -38,6 +38,6 @@ public class RotateMatrixTest {
         };
 
         RotateMatrix.rotate(matrix);
-        CommonUtils.assertBidimensionalArray(matrix).isEqualTo(expected);
+        CustomAssert.assertBidimensionalArray(matrix).isEqualTo(expected);
     }
 }

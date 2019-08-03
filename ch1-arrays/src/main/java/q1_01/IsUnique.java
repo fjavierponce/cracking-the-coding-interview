@@ -29,9 +29,4 @@ public class IsUnique {
         }
         return true;
     }
-
-    // Using a bit vector
-    public static boolean checkV2(String test) {
-        return false;
-    }
 }

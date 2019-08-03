@@ -1,7 +1,8 @@
 package q1_08;
 
-import org.junit.Test;
-import common.CommonUtils;
+import org.junit.jupiter.api.Test;
+
+import customassert.CustomAssert;
 
 public class ZeroMatrixTest {
 
@@ -19,7 +20,7 @@ public class ZeroMatrixTest {
                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
 
         ZeroMatrix.calculateZeroMatrixUsingExtraArrays(matrix);
-        CommonUtils.assertBidimensionalArray(matrix).isEqualTo(expected);
+        CustomAssert.assertBidimensionalArray(matrix).isEqualTo(expected);
     }
 
     @Test
@@ -36,6 +37,6 @@ public class ZeroMatrixTest {
                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}};
 
         ZeroMatrix.calculateZeroMatrixUsingExtraArrays(matrix);
-        CommonUtils.assertBidimensionalArray(matrix).isEqualTo(expected);
+        CustomAssert.assertBidimensionalArray(matrix).isEqualTo(expected);
     }
 }

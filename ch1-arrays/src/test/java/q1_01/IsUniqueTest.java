@@ -2,7 +2,8 @@ package q1_01;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
 
 /**
  * 1.1 Is Unique: Implement an
